@@ -1,6 +1,6 @@
-# Project Title
+# MRML_Slicer
 
-One Paragraph of project description goes here
+Matlab functions for adding modalities and scenes to a mrml scene file.
 
 ## Requirements
 
