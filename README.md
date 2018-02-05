@@ -6,6 +6,9 @@ Matlab functions for adding modalities and scenes to a mrml scene file.
 
 * [spm12](http://www.fil.ion.ucl.ac.uk/spm/software/spm12/)
 
+##Structure Tree
+![image](https://github.com/jvpasinatto/MRML_Slicer/blob/master/MRML_UP.png "Structure Tree")
+
 ## Adding Modalities
  
 ### Add Volumes
