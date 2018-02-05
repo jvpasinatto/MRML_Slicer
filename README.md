@@ -15,6 +15,28 @@ Matlab functions for adding modalities and scenes to a mrml scene file.
 ```matlab
 add_vol('filepath.nii', )
 ```
+#### info_vol
+Function that get info from de header of the .nii file.
+
+#### volumedisplay_node
+Node that stores the info about how to display the volume in the scene.
+Here you can change the following parameters:
+* Window
+* Level
+* ColorNode
+* Threshold
+* Auto WindowLevel
+* Auto Threshold
+* Interpolate
+
+
+#### volumearchetypestorage_node
+Node that stores the info about the storage of the .nii volume file.
+
+#### volume_node
+Node that represents the volume, stores the references to the display and storage nodes and also basic info about the volume.
+
+
 ### Add Models
 ```matlab
 add_model('filepath.vtp')
