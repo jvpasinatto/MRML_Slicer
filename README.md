@@ -11,16 +11,19 @@ Matlab functions for adding modalities and scenes to a mrml scene file.
 
 ## Adding Modalities
  
-### Add Volumes
+### Add Volume
 ```matlab
-add_vol('filepath.nii', )
+add_vol('../file.nii', 'background')
 ```
+
+### Functions:
+
 #### info_vol
 Function that get info from de header of the .nii file.
 
 #### volumedisplay_node
 Node that stores the info about how to display the volume in the scene.
-Here you can change the following parameters:
+Here you can change, among others, the following parameters:
 * Window
 * Level
 * ColorNode
@@ -37,19 +40,55 @@ Node that stores the info about the storage of the .nii volume file.
 Node that represents the volume, stores the references to the display and storage nodes and also basic info about the volume.
 
 
-### Add Models
+### Add Model
 ```matlab
-add_model('filepath.vtp')
+add_model('../file.vtp')
 ```
+
+###Functions:
+
+#### model_node
+Node that represents the model, stores the references to the display and storage nodes and also basic info about the model.
+
+#### modeldisplay_node
+Node that stores the info about how to display the 3D view of the model in the scene.
+Here you can change, among others, the following parameters:
+* FrontfaceCulling
+* BackfaceCulling
+* EdgeVisibility
+* Visibility
+
+#### modelstorage_node
+Node that stores the info about the storage of the .vtp model file.
+
+
 ### Add Markups
 ```matlab
-add_markups('filepath.fcsv')
+add_markups('../file.fcsv')
 ```
+
+### Functions:
+
+#### markupsfiducial_node
+Node that represents the fiducial markups, stores the references to the display and storage nodes and also basic info about the markups.
+
+#### markupsdisplay_node
+Node that stores the info about how to display the fiducial points in the scene.
+Here you can change, among others, the following parameters:
+* Opacity
+* Scale
+* Interpolation
+* Visibility
+
+#### markupsstorage_node
+Node that stores the info about the storage of the .fcsv file.
+
+
 ### Add Volume Properties
 ```matlab
-add_volumeproperty('filepath.vp')
+add_volumeproperty('../file.vp')
 ```
-## Adding Scene Views
+## Adding Scene View
 ### Add SceneView
 ```matlab
 add_view()
