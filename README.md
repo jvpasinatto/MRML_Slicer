@@ -21,6 +21,9 @@ add_vol('../file.nii', 'background')
 #### info_vol
 Function that get info from de header of the .nii file.
 
+#### volume_node
+Node that represents the volume, stores the references to the display and storage nodes and also basic info about the volume.
+
 #### volumedisplay_node
 Node that stores the info about how to display the volume in the scene.
 Here you can change, among others, the following parameters:
@@ -36,16 +39,13 @@ Here you can change, among others, the following parameters:
 #### volumearchetypestorage_node
 Node that stores the info about the storage of the .nii volume file.
 
-#### volume_node
-Node that represents the volume, stores the references to the display and storage nodes and also basic info about the volume.
-
 
 ### Add Model
 ```matlab
 add_model('../file.vtp')
 ```
 
-###Functions:
+### Functions:
 
 #### model_node
 Node that represents the model, stores the references to the display and storage nodes and also basic info about the model.
@@ -88,6 +88,15 @@ Node that stores the info about the storage of the .fcsv file.
 ```matlab
 add_volumeproperty('../file.vp')
 ```
+### Functions:
+
+#### volumeproperty_node
+Node that represents the volume property, stores the references to the storage node and also the properties of the volume.
+
+#### volumepropertystorage_node
+Node that stores the info about the storage of the .vp file.
+
+
 ## Adding Scene View
 ### Add SceneView
 ```matlab
